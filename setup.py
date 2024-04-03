@@ -3,7 +3,7 @@
 from setuptools import find_packages, setup
 
 PLUGIN_LOGICAL_NAME = "demo"
-PLUGIN_ROOT_MODULE = "sqlfluff_custom_demo"
+PLUGIN_ROOT_MODULE = "sqlfluff_plugin_demo"
 
 setup(
   name=f"sqlfluff-plugin-{PLUGIN_LOGICAL_NAME}",
