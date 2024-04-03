@@ -30,7 +30,7 @@ def get_rules() -> List[Type[BaseRule]]:
 def load_default_config() -> dict:
   """Loads the default configuration for the plugin."""
   return ConfigLoader.get_global().load_config_resource(
-    package="sqlfluff-plugin-demo",
+    package="sqlfluff_custom_demo",
     file_name="plugin_config.cfg",
   )
 
