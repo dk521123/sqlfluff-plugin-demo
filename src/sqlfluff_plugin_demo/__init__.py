@@ -22,7 +22,7 @@ def get_rules() -> List[Type[BaseRule]]:
   is available for the validation steps in the meta class.
   """
   # i.e. we DO recommend importing here:
-  from sqlfluff_custom_demo import Rule_Custom_Demo_L001 # noqa: F811
+  from sqlfluff_plugin_demo import Rule_Custom_Demo_L001 # noqa: F811
   return [Rule_Custom_Demo_L001]
 
 
