@@ -20,7 +20,7 @@ sqlfluff lint --dialect snowflake test.sql
 
 ## Uninstall
 ```sh
-pip unstall --yes sqlfluff-plugin-demo
+pip uninstall --yes sqlfluff-plugin-demo
 ```
 
 # How to create Python packages
