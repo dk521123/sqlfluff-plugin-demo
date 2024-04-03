@@ -1,0 +1,11 @@
+FROM sqlfluff/sqlfluff
+USER root
+
+# Setup
+WORKDIR init
+COPY setup.py /init
+COPY src/sqlfluff_custom_rule/*.py /init/src/sqlfluff_custom_rule/
+COPY src/sqlfluff_custom_rule/plugin_default_config.cfg /init/src/sqlfluff_custom_rule/
+
+# Install the custom rule
+RUN pip install -e .
