@@ -15,7 +15,11 @@ pip list | grep sqlfluff
 ## How to run
 ```sh
 # sqlfluff lint --dialect <your-target-db><target_sql>
-sqlfluff lint --dialect snowflake test.sql
+$ sqlfluff lint --dialect snowflake test.sql
+== [test.sql] FAIL
+L:   2 | P:  38 | Demo_L001 | Column `bar` not allowed in ORDER BY.
+L:   5 | P:  38 | Demo_L001 | Column `bar` not allowed in ORDER BY.
+All Finished !
 ```
 
 ## Uninstall
