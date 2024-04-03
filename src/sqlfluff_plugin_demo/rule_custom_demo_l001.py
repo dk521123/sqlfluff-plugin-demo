@@ -11,7 +11,7 @@ from sqlfluff.core.rules.crawlers import SegmentSeekerCrawler
 
 # These two decorators allow plugins
 # to be displayed in the sqlfluff docs
-class Rule_Custom_Demo_L001(BaseRule):
+class Rule_Demo_L001(BaseRule):
   """ORDER BY on these columns is forbidden!
 
   **Anti-pattern**
